@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
+import android.provider.Settings
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -53,6 +54,10 @@ class llamada : AppCompatActivity() {
                 dialPhoneNumber("112")
             } else {
                 Toast.makeText(this, "Permiso de llamada denegado", Toast.LENGTH_SHORT).show()
+//                val intent = Intent(this, Settings.ACTION.APPLICATION_DETAILS_SETTINGS)
+//                val uri = Uri.fromParts("package",packageName,null)
+//                intent.data = uri
+//                startActivity(intent)
             }
         }
     }
