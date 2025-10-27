@@ -54,10 +54,10 @@ class llamada : AppCompatActivity() {
                 dialPhoneNumber("112")
             } else {
                 Toast.makeText(this, "Permiso de llamada denegado", Toast.LENGTH_SHORT).show()
-//                val intent = Intent(this, Settings.ACTION.APPLICATION_DETAILS_SETTINGS)
-//                val uri = Uri.fromParts("package",packageName,null)
-//                intent.data = uri
-//                startActivity(intent)
+                val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
+                val uri = Uri.fromParts("package",packageName,null)
+                intent.data = uri
+                startActivity(intent)
             }
         }
     }

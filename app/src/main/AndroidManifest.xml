@@ -6,6 +6,7 @@
     <uses-feature
         android:name="android.hardware.telephony"
         android:required="false" />
+
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -17,7 +18,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Practica_tema1">
-
+        <activity
+            android:name=".ConfActivity"
+            android:exported="false" />
         <activity
             android:name=".llamada"
             android:exported="false" />
@@ -26,8 +29,10 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
