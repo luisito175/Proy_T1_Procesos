@@ -3,8 +3,10 @@ package Practica_tema1.IESVDC.SegdoDAM
 import android.app.SearchManager
 import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.icu.util.Calendar
 import android.net.Uri
 import android.os.Bundle
+import android.provider.AlarmClock
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -62,6 +64,24 @@ class MainActivity : AppCompatActivity() {
         botonahorro.setOnClickListener {
             val intent = Intent(Settings.ACTION_BATTERY_SAVER_SETTINGS)
             startActivity(intent)
+        }
+
+        val botonAlarma = findViewById<ImageButton>(R.id.alarma)
+        botonAlarma.setOnClickListener {
+            val now = Calendar.getInstance()
+            now.add(Calendar.MINUTE, 2)  // Suma 2 minutos
+
+            val intent = Intent(AlarmClock.ACTION_SET_ALARM).apply {
+                putExtra(AlarmClock.EXTRA_MESSAGE, "Alarma automática 2 min")
+                putExtra(AlarmClock.EXTRA_HOUR, now.get(Calendar.HOUR_OF_DAY))
+                putExtra(AlarmClock.EXTRA_MINUTES, now.get(Calendar.MINUTE))
+            }
+
+            if (intent.resolveActivity(packageManager) != null) {
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "No se encontró app de reloj", Toast.LENGTH_SHORT).show()
+            }
         }
 
     }

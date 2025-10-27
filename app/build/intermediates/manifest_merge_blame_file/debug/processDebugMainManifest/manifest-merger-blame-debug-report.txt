@@ -6,7 +6,7 @@
 6    android:versionName="1.0" >
 7
 8    <uses-sdk
-9        android:minSdkVersion="22"
+9        android:minSdkVersion="26"
 10        android:targetSdkVersion="34" />
 11
 12    <uses-feature
@@ -40,7 +40,7 @@
 27        android:dataExtractionRules="@xml/data_extraction_rules"
 27-->/home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:14:9-65
 28        android:debuggable="true"
-29        android:extractNativeLibs="true"
+29        android:extractNativeLibs="false"
 30        android:fullBackupContent="@xml/backup_rules"
 30-->/home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:15:9-54
 31        android:icon="@mipmap/ic_launcher"
