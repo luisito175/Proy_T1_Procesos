@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.net.toUri
+import android.provider.Settings
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,9 +57,12 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "No has introducido una URL válida", Toast.LENGTH_SHORT).show()
             }
         }
-
+        //Este es el intent que yo he elegido, es un acceso a los ajustes sobre el ahorro de bateria
         val botonahorro = findViewById<ImageButton>(R.id.botonahorro)
-
+        botonahorro.setOnClickListener {
+            val intent = Intent(Settings.ACTION_BATTERY_SAVER_SETTINGS)
+            startActivity(intent)
+        }
 
     }
 }
