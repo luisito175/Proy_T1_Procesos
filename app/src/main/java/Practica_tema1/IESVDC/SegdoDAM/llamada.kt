@@ -64,7 +64,9 @@ class llamada : AppCompatActivity() {
 
     private fun dialPhoneNumber(phoneNumber: String) {
         val intent = Intent(Intent.ACTION_CALL).apply {
-            data = Uri.parse("tel:$phoneNumber")
+            val sharedPreferences = getSharedPreferences("numero", MODE_PRIVATE)
+            val numero = sharedPreferences.getString("numero","")
+            data = Uri.parse("tel:$numero")
         }
         if (intent.resolveActivity(packageManager) != null) {
             startActivity(intent)

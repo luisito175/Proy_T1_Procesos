@@ -1,12 +1,17 @@
 package Practica_tema1.IESVDC.SegdoDAM
 
+import android.app.SearchManager
+import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.net.toUri
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,5 +29,36 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, llamada::class.java)
             startActivity(intent)
         }
+
+        val botonAjustes = findViewById<ImageButton>(R.id.botonAjustes)
+        botonAjustes.setOnClickListener {
+            val intent = Intent(this, ConfActivity::class.java)
+            startActivity(intent)
+        }
+
+        val botonweb = findViewById<ImageButton>(R.id.botonweb)
+        botonweb.setOnClickListener {
+            val sharedPreferences = getSharedPreferences("url", MODE_PRIVATE)
+            val url = sharedPreferences.getString(
+                "url",
+                "https://esupervivencia.com/wp-content/uploads/2012/05/curso-supervivencia-bosque.pdf"
+            )
+
+            if (!url.isNullOrEmpty()) {
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                try {
+                    startActivity(intent)
+                } catch (e: ActivityNotFoundException) {
+                    Toast.makeText(this, "No hay navegador disponible", Toast.LENGTH_SHORT).show()
+                }
+
+            } else {
+                Toast.makeText(this, "No has introducido una URL válida", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        val botonahorro = findViewById<ImageButton>(R.id.botonahorro)
+
+
     }
 }

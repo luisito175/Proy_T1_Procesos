@@ -8,6 +8,8 @@
     android:backgroundTint="@color/black"
     tools:context=".MainActivity">
 
+    <!-- Fila Superior de Botones -->
+
     <ImageView
         android:id="@+id/imageViewFondo"
         android:layout_width="0dp"
@@ -16,22 +18,24 @@
         android:src="@drawable/foto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100px"
+        android:layout_marginTop="20dp"
         android:text="Survival App"
         android:textColor="@color/white"
         android:textSize="60dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Fila Superior de Botones -->
     <ImageButton
         android:id="@+id/botonahorro"
         android:layout_width="64dp"
@@ -106,7 +110,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Llamar al 112"
+        android:text="Llamada de emergencia"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/botonllamar"
         app:layout_constraintStart_toStartOf="@+id/botonllamar"
@@ -117,7 +121,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Manual Web"
+        android:text="Acceso a Web"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/botonweb"
         app:layout_constraintStart_toStartOf="@+id/botonweb"
@@ -133,4 +137,14 @@
         app:layout_constraintEnd_toEndOf="@+id/alarma"
         app:layout_constraintStart_toStartOf="@+id/alarma"
         app:layout_constraintTop_toBottomOf="@+id/alarma" />
+
+    <ImageButton
+        android:id="@+id/botonAjustes"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_manage"
+        android:background="#00000000"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

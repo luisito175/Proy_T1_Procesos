@@ -25,6 +25,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageButton alarma;
 
   @NonNull
+  public final ImageButton botonAjustes;
+
+  @NonNull
   public final ImageButton botonahorro;
 
   @NonNull
@@ -55,12 +58,14 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView textweb;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageButton alarma,
-      @NonNull ImageButton botonahorro, @NonNull ImageButton botonllamar,
-      @NonNull ImageButton botonweb, @NonNull ImageView imageViewFondo,
-      @NonNull ConstraintLayout main, @NonNull TextView textView, @NonNull TextView textahorro,
-      @NonNull TextView textalarma, @NonNull TextView textllamar, @NonNull TextView textweb) {
+      @NonNull ImageButton botonAjustes, @NonNull ImageButton botonahorro,
+      @NonNull ImageButton botonllamar, @NonNull ImageButton botonweb,
+      @NonNull ImageView imageViewFondo, @NonNull ConstraintLayout main, @NonNull TextView textView,
+      @NonNull TextView textahorro, @NonNull TextView textalarma, @NonNull TextView textllamar,
+      @NonNull TextView textweb) {
     this.rootView = rootView;
     this.alarma = alarma;
+    this.botonAjustes = botonAjustes;
     this.botonahorro = botonahorro;
     this.botonllamar = botonllamar;
     this.botonweb = botonweb;
@@ -103,6 +108,12 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.alarma;
       ImageButton alarma = ViewBindings.findChildViewById(rootView, id);
       if (alarma == null) {
+        break missingId;
+      }
+
+      id = R.id.botonAjustes;
+      ImageButton botonAjustes = ViewBindings.findChildViewById(rootView, id);
+      if (botonAjustes == null) {
         break missingId;
       }
 
@@ -162,8 +173,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, alarma, botonahorro, botonllamar,
-          botonweb, imageViewFondo, main, textView, textahorro, textalarma, textllamar, textweb);
+      return new ActivityMainBinding((ConstraintLayout) rootView, alarma, botonAjustes, botonahorro,
+          botonllamar, botonweb, imageViewFondo, main, textView, textahorro, textalarma, textllamar,
+          textweb);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
