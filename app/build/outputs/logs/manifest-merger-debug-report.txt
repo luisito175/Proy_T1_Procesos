@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:2:1-38:12
+ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:2:1-40:12
 MERGED from [androidx.databinding:viewbinding:8.13.0] /home/luis/AndroidStudioProjects/Proy1/gradle/wrapper/caches/8.13/transforms/f138b78d8f9625d145039d3ccbf00bb2/transformed/viewbinding-8.13.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-runtime-android:2.9.5] /home/luis/AndroidStudioProjects/Proy1/gradle/wrapper/caches/8.13/transforms/34af80360e4621295424e4a4026cfe6d/transformed/navigation-runtime-release/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-android:2.9.5] /home/luis/AndroidStudioProjects/Proy1/gradle/wrapper/caches/8.13/transforms/56780b6c326f2e9984da5be59eb15336/transformed/navigation-common-release/AndroidManifest.xml:17:1-22:12
@@ -102,9 +102,13 @@ uses-permission#android.permission.CALL_PHONE
 ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:10:5-69
 	android:name
 		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:10:22-66
+uses-permission#com.android.alarm.permission.SET_ALARM
+ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:11:22-75
 application
-ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:12:5-36:19
-INJECTED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:12:5-36:19
+ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:14:5-38:19
+INJECTED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:14:5-38:19
 MERGED from [com.google.android.material:material:1.13.0] /home/luis/AndroidStudioProjects/Proy1/gradle/wrapper/caches/8.13/transforms/33079909f17da03ffd266d4c31ede073/transformed/material-1.13.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.13.0] /home/luis/AndroidStudioProjects/Proy1/gradle/wrapper/caches/8.13/transforms/33079909f17da03ffd266d4c31ede073/transformed/material-1.13.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/luis/AndroidStudioProjects/Proy1/gradle/wrapper/caches/8.13/transforms/cf0ff2f98a8874c9ac857f8ca370449c/transformed/constraintlayout-2.2.1/AndroidManifest.xml:7:5-20
@@ -128,49 +132,49 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/luis/AndroidStudioPro
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.17.0] /home/luis/AndroidStudioProjects/Proy1/gradle/wrapper/caches/8.13/transforms/4b772397b1eb81e0dc993c58b5a67b1c/transformed/core-1.17.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:19:9-35
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:17:9-41
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:19:9-41
 	android:fullBackupContent
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:15:9-54
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:17:9-54
 	android:roundIcon
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:18:9-54
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:20:9-54
 	android:icon
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:16:9-43
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:18:9-43
 	android:allowBackup
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:20:9-52
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:22:9-52
 	android:dataExtractionRules
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:14:9-65
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:16:9-65
 activity#Practica_tema1.IESVDC.SegdoDAM.ConfActivity
-ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:21:9-23:40
+ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:23:9-25:40
 	android:exported
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:23:13-37
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:22:13-41
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:24:13-41
 activity#Practica_tema1.IESVDC.SegdoDAM.llamada
-ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:24:9-26:40
+ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:26:9-28:40
 	android:exported
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:26:13-37
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:25:13-36
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:27:13-36
 activity#Practica_tema1.IESVDC.SegdoDAM.MainActivity
-ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:27:9-35:20
+ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:29:9-37:20
 	android:exported
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:29:13-36
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:31:13-36
 	android:name
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:28:13-41
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:30:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:30:13-34:29
+ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:31:17-69
+ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:31:25-66
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:33:17-77
+ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:33:27-74
+		ADDED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml:35:27-74
 uses-sdk
 INJECTED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/luis/AndroidStudioProjects/Practica_tema1_v2/app/src/main/AndroidManifest.xml

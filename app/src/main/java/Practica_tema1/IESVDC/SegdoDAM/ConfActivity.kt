@@ -66,7 +66,7 @@ class ConfActivity : AppCompatActivity() {
 
             // 5. Muestra un mensaje de confirmación al usuario.
             Toast.makeText(this, "Ajustes guardados correctamente", Toast.LENGTH_SHORT).show()
-            
+
             // 6. Cierra la pantalla de ajustes y vuelve a la pantalla principal.
             finish()
         }

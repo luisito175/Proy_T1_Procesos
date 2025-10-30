@@ -14,6 +14,7 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <permission
         android:name="com.example.sosphone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"

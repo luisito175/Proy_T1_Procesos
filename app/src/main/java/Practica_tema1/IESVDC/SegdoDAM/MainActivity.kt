@@ -79,26 +79,21 @@ class MainActivity : AppCompatActivity() {
         // 5. Botón para poner una alarma.
         val botonAlarma = findViewById<ImageButton>(R.id.alarma)
         botonAlarma.setOnClickListener {
-            // Coge la hora actual.
-            val now = Calendar.getInstance()
-            // Le suma 2 minutos a la hora actual.
-            now.add(Calendar.MINUTE, 2)
-
-            // Crea una "intención" para que la app de reloj del móvil ponga una alarma.
-            val intent = Intent(AlarmClock.ACTION_SET_ALARM).apply {
-                // Añade los datos de la alarma: mensaje, hora y minutos.
-                putExtra(AlarmClock.EXTRA_MESSAGE, "Alarma automática 2 min")
-                putExtra(AlarmClock.EXTRA_HOUR, now.get(Calendar.HOUR_OF_DAY))
-                putExtra(AlarmClock.EXTRA_MINUTES, now.get(Calendar.MINUTE))
+            //Saco al hora actual y le sumamos dos minutos para ponerla
+            val calendar = Calendar.getInstance().apply {
+                add(Calendar.MINUTE, 2) // Añade 2 minutos al tiempo actual
             }
-
-            // Comprueba si hay alguna app de reloj que pueda gestionar la alarma.
+            //ponemos la alarma con sus datos
+            val intent = Intent(AlarmClock.ACTION_SET_ALARM).apply {
+                putExtra(AlarmClock.EXTRA_HOUR, calendar.get(Calendar.HOUR_OF_DAY))
+                putExtra(AlarmClock.EXTRA_MINUTES, calendar.get(Calendar.MINUTE))
+                putExtra(AlarmClock.EXTRA_MESSAGE, "Alarma SOS")
+            }
+            //este if sacado de chatgpt lo puse para ver porque me fallaba, cosa que era tema de un permiso erroneo pero ya lo dejo para que no de error en el emulador
             if (intent.resolveActivity(packageManager) != null) {
-                // Si la hay, la inicia.
                 startActivity(intent)
             } else {
-                // Si no, muestra un aviso.
-                Toast.makeText(this, "No se encontró app de reloj", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "No hay una app de alarma disponible", Toast.LENGTH_SHORT).show()
             }
         }
     }
